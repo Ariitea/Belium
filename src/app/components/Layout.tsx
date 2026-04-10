@@ -43,7 +43,7 @@ export function Layout() {
 
           {/* Logo (Center) */}
           <Link to="/" className="text-2xl tracking-[0.2em] font-bold uppercase flex-shrink-0">
-            Atelier
+            Belium
           </Link>
 
           {/* Actions (Right) */}
@@ -51,9 +51,9 @@ export function Layout() {
             <button className="text-zinc-900 hover:text-zinc-500 transition-colors" aria-label="Search">
               <Search className="w-5 h-5" strokeWidth={1.5} />
             </button>
-            <Link to="/contact" className="hidden md:block text-sm font-medium tracking-wide uppercase hover:text-zinc-500 transition-colors">
-              Client Services
-            </Link>
+            {/*<Link to="/contact" className="hidden md:block text-sm font-medium tracking-wide uppercase hover:text-zinc-500 transition-colors">
+              Contact
+            </Link>*/}
           </div>
         </div>
       </header>
@@ -70,7 +70,7 @@ export function Layout() {
             <div className="p-6 h-full flex flex-col">
               <div className="flex justify-between items-center mb-12">
                 <Link to="/" className="text-2xl tracking-[0.2em] font-bold uppercase">
-                  Atelier
+                  Belium
                 </Link>
                 <button 
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -113,9 +113,9 @@ export function Layout() {
       <footer className="bg-white border-t border-zinc-200 py-16 px-6 mt-20">
         <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-sm font-bold tracking-widest uppercase mb-6">Atelier</h3>
+            <h3 className="text-sm font-bold tracking-widest uppercase mb-6">Belium</h3>
             <p className="text-sm text-zinc-500 max-w-xs">
-              Defining modern luxury through exceptional craftsmanship and minimalist design.
+              Luxury trusted by connoisseurs worldwide.
             </p>
           </div>
           <div>
@@ -144,7 +144,7 @@ export function Layout() {
             <div className="flex border-b border-zinc-300 pb-2">
               <input 
                 type="email" 
-                placeholder="EMAIL ADDRESS" 
+                placeholder="email address" 
                 className="bg-transparent text-sm w-full focus:outline-none placeholder-zinc-400"
               />
               <button className="text-xs font-bold tracking-widest uppercase text-zinc-900 ml-4 hover:text-zinc-500">
@@ -154,7 +154,7 @@ export function Layout() {
           </div>
         </div>
         <div className="max-w-[1600px] mx-auto mt-16 pt-8 border-t border-zinc-100 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-400 uppercase tracking-wider">
-          <p>&copy; {new Date().getFullYear()} Atelier. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Belium. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-zinc-900 transition-colors">Legal</a>
             <a href="#" className="hover:text-zinc-900 transition-colors">Privacy</a>
